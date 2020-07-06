@@ -17,23 +17,20 @@ namespace IdentityServerAPIAuth.Persistence
 
                 var context = serviceScope.ServiceProvider.GetRequiredService<ConfigurationDbContext>();
                 context.Database.Migrate();
-                if (!context.Clients.Any())
-                {
-                    foreach (var client in IdentityServerConfig.GetClients())
-                    {
-                        context.Clients.Add(client.ToEntity());
-                    }
-                    context.SaveChanges();
-                }
 
-                if (!context.ApiResources.Any())
+                foreach (var client in IdentityServerConfig.GetClients())
                 {
-                    foreach (var resource in IdentityServerConfig.GetApis())
-                    {
-                        context.ApiResources.Add(resource.ToEntity());
-                    }
-                    context.SaveChanges();
+                    if (!context.Clients.Any(x => x.ClientId == client.ClientId))
+                        context.Clients.Add(client.ToEntity());
                 }
+                context.SaveChanges();
+
+                foreach (var resource in IdentityServerConfig.GetApis())
+                {
+                    if (!context.ApiResources.Any(x => x.Name == resource.Name))
+                        context.ApiResources.Add(resource.ToEntity());
+                }
+                context.SaveChanges();
             }
         }
     }
