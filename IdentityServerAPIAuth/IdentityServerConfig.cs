@@ -18,7 +18,7 @@ namespace IdentityServerAPIAuth
         {
             return new List<Client>
             {
-                //for Stagebox dev team testing
+                //PROD Credentials for Stagebox developer team testing
                 new Client
                 {
                     ClientId = "devCCProdClient",
@@ -35,7 +35,7 @@ namespace IdentityServerAPIAuth
                     AllowedScopes = { "Stagebox", IdentityServerConstants.StandardScopes.OfflineAccess },
                     UpdateAccessTokenClaimsOnRefresh = true
                 },
-                //PROD Credentials for NS & JiBe
+                //PROD Credentials for NS , JiBe & ES
                 new Client
                 {
                     ClientId = "AESBJB4A917DC34FBD47C0B54BBDE6110668C4",
@@ -48,6 +48,13 @@ namespace IdentityServerAPIAuth
                     ClientId = "AESBNS680838703C4E4F02991E4EC711692BA0",
                     AllowedGrantTypes = GrantTypes.ClientCredentials,
                     ClientSecrets = {new Secret("apVfpvNVF44iriYe9SCI5l0mq7A9snJDZXMeB7paoHXEaIcyujTmAHqw88WoJzs1VVALsu".Sha256()) },
+                    AllowedScopes = { "Stagebox" }
+                },
+                new Client
+                {
+                    ClientId = "AESBES8FFEEB84A93F40BEB4B7AC0E49B70AF0",
+                    AllowedGrantTypes = GrantTypes.ClientCredentials,
+                    ClientSecrets = {new Secret("L8pQqQAtx4x5K5zMaDnnrqLzaQYyzuNTzGLbFTwLChjV6mgrDG5wj2GrnUGtkTxHF4dXXf".Sha256()) },
                     AllowedScopes = { "Stagebox" }
                 }
                 //Test, MIG Environments
@@ -79,6 +86,13 @@ namespace IdentityServerAPIAuth
                 //    ClientId = "AESBNS12B0A66C897C4B19B6647B86AF541D77",
                 //    AllowedGrantTypes = GrantTypes.ClientCredentials,
                 //    ClientSecrets = {new Secret("U4QqgRoJz8qWcN3rx3Mz7chabBbzCR73FGaUfRSG8CcwtctsHnrFsVjcLv5paryAaxi7b7".Sha256()) },
+                //    AllowedScopes = { "Stagebox" }
+                //},
+                //new Client
+                //{
+                //    ClientId = "AESBES89BFF845E7AF481AB3BDB0AAD9386ABA",
+                //    AllowedGrantTypes = GrantTypes.ClientCredentials,
+                //    ClientSecrets = {new Secret("DbzUBz5cJFr9qJnvrDVRQkcf4AHevVzsrPHtqZhCNrFpQtSLqRF8v63GyyvdcPLRJA4Kkx".Sha256()) },
                 //    AllowedScopes = { "Stagebox" }
                 //}
             };

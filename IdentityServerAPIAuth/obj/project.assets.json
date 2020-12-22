@@ -5705,11 +5705,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\AEITProject\\API Auth Module\\Main\\IdentityServerAPIAuth\\IdentityServerAPIAuth\\IdentityServerAPIAuth.csproj",
+      "projectUniqueName": "C:\\AEIT DevOps\\AE Dev Project\\API Auth Module\\Main\\IdentityServerAPIAuth\\IdentityServerAPIAuth\\IdentityServerAPIAuth.csproj",
       "projectName": "IdentityServerAPIAuth",
-      "projectPath": "C:\\AEITProject\\API Auth Module\\Main\\IdentityServerAPIAuth\\IdentityServerAPIAuth\\IdentityServerAPIAuth.csproj",
+      "projectPath": "C:\\AEIT DevOps\\AE Dev Project\\API Auth Module\\Main\\IdentityServerAPIAuth\\IdentityServerAPIAuth\\IdentityServerAPIAuth.csproj",
       "packagesPath": "C:\\Users\\manchikantim\\.nuget\\packages\\",
-      "outputPath": "C:\\AEITProject\\API Auth Module\\Main\\IdentityServerAPIAuth\\IdentityServerAPIAuth\\obj\\",
+      "outputPath": "C:\\AEIT DevOps\\AE Dev Project\\API Auth Module\\Main\\IdentityServerAPIAuth\\IdentityServerAPIAuth\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5727,6 +5727,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -5738,6 +5739,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "IdentityServer4": {
             "target": "Package",
@@ -5780,12 +5782,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[3.1.2, 3.1.2]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -5794,7 +5790,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
