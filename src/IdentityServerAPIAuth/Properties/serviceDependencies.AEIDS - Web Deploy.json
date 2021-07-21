@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroup')]/providers/Microsoft.Sql/servers/aeit/databases/IdentityServerAPIAuth_prod_db",
+      "type": "mssql.azure",
+      "connectionId": "IdentityServerDBConnection",
+      "secretStore": "AzureAppSettings"
+    }
+  }
+}
