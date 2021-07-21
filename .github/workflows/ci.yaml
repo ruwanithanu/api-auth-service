@@ -33,5 +33,6 @@ jobs:
           repo-token: ${{ secrets.PAT }}
           repo-name: angloeastern/action-sonar-scanner
           sonar-token: ${{ secrets.SONAR_TOKEN }}
+          has-tests: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
